@@ -1,0 +1,32 @@
+{
+  "name": "@araki/resizer-js",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "bin": {
+    "resizer": "./lib/resizer.js"
+  },
+  "scripts": {
+    "start": "ts-node src/main.ts",
+    "test": "ts-node src/main.ts --debug --target __test__/sample.png --width 30 -e webp",
+    "build": "tsc src/main.ts --outDir lib"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "cli-table": "^0.3.1",
+    "commander": "^3.0.2",
+    "semver": "^6.3.0",
+    "sharp": "^0.23.1"
+  },
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/cli-table": "^0.3.0",
+    "@types/commander": "^2.12.2",
+    "@types/semver": "^6.0.2",
+    "@types/sharp": "^0.23.0",
+    "rollup": "^1.25.1",
+    "ts-node": "^8.4.1",
+    "tsc": "^1.20150623.0",
+    "typescript": "^3.6.4"
+  }
+}
